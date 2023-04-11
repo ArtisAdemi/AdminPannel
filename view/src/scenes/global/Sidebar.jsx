@@ -32,7 +32,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [selected, setSelected] = useState("Dashboard");
   
   
@@ -86,7 +86,8 @@ const Sidebar = () => {
           </MenuItem>
               {/* USER  */}
           {!isCollapsed && (
-            <><Box mb="25px">
+            <><Box mb="25px"
+            textAlign="center">
               <img src={`../../assets/sticker.png`} alt="profile-user"
                 width="100px"
                 height="100px"
