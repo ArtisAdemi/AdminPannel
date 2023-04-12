@@ -21,6 +21,7 @@ const colors = tokens(theme.palette.mode);
             <Box>
                 <ProgressCircle progress = {progress} />
             </Box>
+            </Box>
             <Box display="flex" justifyContent="space-between">
             <Typography varian ="h5"  sx={{
                     color: colors.greenAccent[500]
@@ -33,7 +34,7 @@ const colors = tokens(theme.palette.mode);
                     {increase}
                 </Typography>
             </Box>
-        </Box>
+        
     </Box>
   )
 }
